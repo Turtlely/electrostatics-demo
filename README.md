@@ -1,6 +1,8 @@
 # electrostatics-demo
 Multipole simulation, although other particle configurations can also be made
 
-Requires python, numpy, and matplotlib.
+Requires Python, numpy, and matplotlib.
 
-![image](https://github.com/Turtlely/electrostatics-demo/assets/55010651/044b0ee2-7d8c-4e61-8522-c44a9825d885)
+## Example Output:
+![image](https://github.com/Turtlely/electrostatics-demo/assets/55010651/bf95ad39-58c3-432c-b657-48c4ce0123f0)
+> Multipole with eight alternating charges. The electrostatic potential field and electric field vectors are shown
