@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
+from MPLN import MidpointLogNorm
 
 '''Configuration'''
 
@@ -114,7 +115,7 @@ mask = mag==0
 fig, ax = plt.subplots()
 
 # Plot potential scalar field
-ax.scatter(hires_x,hires_y,c=pot,cmap='seismic',norm=colors.SymLogNorm(linthresh=0.03,vmin=pot.min(),vmax=pot.max()))
+ax.scatter(hires_x,hires_y,c=pot,cmap='seismic',norm=MidpointLogNorm(lin_thres=0.03, lin_scale=1,vmin=pot.min(),vmax=pot.max()))
 
 # Plot electric field
 ax.quiver(x[~mask],y[~mask],fx[~mask],fy[~mask],mag[~mask],cmap='Blues',norm=colors.LogNorm(vmin=mag[~mask].min(),vmax=mag[~mask].max()))
